@@ -27,8 +27,13 @@
   } 
 
   body{
+    @apply font-inter;
     background-color: #FDFBF7;
     /* background-color: #FFF8F4; */
-    @apply font-inter
+     
+  }
+  body::selection{
+    color: var(--background);
+    background-color: var(--color-accent);
   }
 }
