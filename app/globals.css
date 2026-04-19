@@ -9,16 +9,30 @@
   --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-playfair: var(--font-playfair), ui-serif, Georgia, serif;
   
-  --color-body:#FDFBF7;
-  --color-card:#F7F1E9;
-  --color-border:#E5DED5;
+   /* Typography */
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-playfair: var(--font-playfair), ui-serif, Georgia, serif;
+  
+  /* Surfaces */
+  --color-body: #FDFBF7;
+  --color-card: #F7F1E9;
+  --color-border: #E5DED5;
+  
+  /* Text Hierarchy */
   --color-heading: #1A1612;
   --color-body-text: #4A443F;
-  --color-muted-text: #8C847C;/* For "Price before discount" or footer sub-links. */
-  --color-primary-btn: #B33F30; /* Main Buttons, "Add to Cart," and active links. */
-  --color-accent: #D9A05B; /* Stars, "Best Seller" badges, or small icon highlights. */
-  --color-Secondary-Muted: #5B6D5B;/* Use very sparingly for "In Stock" or "New" labels. */
-
+  --color-muted-text: #8C847C;
+  
+  /* Brand Colors */
+  --color-primary: #B33F30;        /* CTA buttons, active links */
+  --color-primary-hover: #8B2F23;  /* Hover state */
+  --color-secondary: #D9A05B;      /* Badges, stars, accents */
+  --color-tertiary: #5B6D5B;       /* Success states, stock labels */
+  
+  /* Semantic Colors */
+  --color-error: #D84315;          /* Out of stock, form errors */
+  --color-warning: #F57C00;        /* Low stock warnings */
+  --color-success: #5B6D5B;
 }
 
 @layer base{

@@ -3,9 +3,11 @@ import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { SearchIcon } from "@/components/ui/Search";
 import { CartIcon } from "@/components/ui/Cart";
-import CloseIcons  from "@/components/ui/Close";
+import CloseIcons from "@/components/ui/Close";
+import { usePathname } from "next/navigation";
 
 const TopNav = () => {
+  const pathname = usePathname()
   const nav = [
     {
       id: "id1",
@@ -26,58 +28,64 @@ const TopNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const inputRef = useRef(null);
 
+useEffect(()=>{
+  if (isOpen) inputRef.current?.focus()
+},[isOpen])
+
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === "Escape") setIsOpen(false);
     };
     if (isOpen) {
       window.addEventListener("keydown", handleEscape);
+      return () => window.removeEventListener("keydown", handleEscape);
     }
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 w-full bg-white/0  backdrop-blur-md shadow-sm z-50">
+    <header className="sticky top-0 w-full bg-white/90  backdrop-blur-md shadow-sm z-50 border-b border-border/50">
       {/* wrap */}
-      <div className=" flex  justify-between items-center px-12 py-6  max-w-screen-2xl mx-auto ">
+      <div className=" flex  justify-between items-center px-6 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
         <nav className="flex justify-between items-center gap-6 font-playfair">
           {nav.map((item) => (
             <Link
               key={item.id}
               href={item.href}
-              className="hover:text-accent active:text-accent duration-300 transition-colors"
+              className={`hover:text-secondary active:text-secondary duration-300 transition-colors text-sm ${pathname ===item.href ?"text-primary font-semibold":"text-body-text hover:text-primary"}`}
             >
               {item.title}
             </Link>
           ))}
         </nav>
         {/* logo */}
-        <div className="font-semibold tracking-[-0.02em] ">
-          <Link href={"/"}>
-            <h4>Heritage Threads</h4>
+
+          <Link className="absolute left-1/2 -translate-x-1/2 font-playfair font-semibold text-xl  tracking-tight hover:text-primary transition-colors " href={"/"}>
+            Heritage Threads
           </Link>
-        </div>
 
         {/* Right Icons */}
-        <div className=" flex justify-end items-center gap-2 ">
+        <div className=" flex justify-end items-center gap-1 ">
           <div
-            className={`flex justify-start items-center transition-all duration-500 ease-in-out  ${
+            className={`flex justify-start items-center transition-all duration-500 ease-in-out h-9  ${
               isOpen
-                ? " border border-border  rounded-full px-2 py-1 "
-                : "border-transparent"
+                ? " border border-border  rounded-full px-2  "
+                : "border-transparent px-0"
             } `}
-            // className={`  ${isOpen && " border border-border  rounded-full cursor-pointer  flex justify-start items-center gap-2 px-2 py-1 "} `}
           >
-            <div
-              className={`cursor-pointer px-4 `}
+            <button
+              className={`p-2 hover:opacity-70 transition-opacity rounded-full hover:bg-border/30`}
+              aria-label="Open search"
               onClick={() => setIsOpen(true)}
             >
               {/* <div className={`cursor-pointer ${!isOpen?"px-6":"px-0"}`} onClick={() => setIsOpen(true)}> */}
               <SearchIcon />
-            </div>
+            </button>
 
             <div
               className={` flex items-center overflow-hidden transition-all duration-500 ease-in-out ${
-                isOpen ? "max-w-xs opacity-100 ml-2" : "max-w-0 opacity-0 ml-0 pointer-events-none"
+                isOpen
+                  ? "max-w-xs opacity-100 ml-1"
+                  : "max-w-0 opacity-0 ml-0 pointer-events-none"
               }`}
             >
               <input
@@ -85,20 +93,23 @@ const TopNav = () => {
                 name="search"
                 type="text"
                 placeholder="Search"
-                // className={` outline-none transition-all duration-500 ease-in-out focus:text-heading text-base ${isOpen?"w-full max-w-60 opacity-100 ml-2":"w-0 opacity-0 ml-0"} `}
-                className="outline-none focus:text-heading text-base bg-transparent w-40"
+                className="outline-none text-sm bg-transparent w-32 placeholder:text-muted-text focus:text-heading"
               />
-              <div
-                className="text-muted-text cursor-pointer ml-1 "
+              <button
+                aria-label="close search"
+                className="text-muted-text hover:text-heading p-1 transition-colors  cursor-pointer hover:bg-border/30 rounded-full  "
                 onClick={() => setIsOpen(false)}
               >
                 <CloseIcons />
-              </div>
+              </button>
             </div>
           </div>
-          <div className="w-fit">
+          <button
+            aria-label="cart"
+            className="p-2 hover:opacity-70 rounded-full hover:bg-border/30 transition-opacity "
+          >
             <CartIcon />
-          </div>
+          </button>
         </div>
       </div>
     </header>
