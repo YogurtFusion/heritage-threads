@@ -43,7 +43,7 @@ useEffect(()=>{
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 w-full bg-white/90  backdrop-blur-md shadow-sm z-50 border-b border-border/50">
+    <header className="sticky top-0 w-full bg-white/5  backdrop-blur-md shadow-sm z-50 border-b border-border/50">
       {/* wrap */}
       <div className=" flex  justify-between items-center px-6 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
         <nav className="flex justify-between items-center gap-6 font-playfair">
