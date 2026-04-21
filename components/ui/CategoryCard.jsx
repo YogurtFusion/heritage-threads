@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const CategoryCard = ({ img ,title}) => {
   return (
-    <div className="group relative w-full h-full aspect-[4/5] overflow-hidden cursor-pointer ">
+    <Link href={"/"} className="group relative w-full h-full aspect-[4/5] overflow-hidden cursor-pointer ">
       <Image
         src={img}
         className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
@@ -19,7 +20,7 @@ const CategoryCard = ({ img ,title}) => {
 
       
       </div>
-    </div>
+    </Link>
   );
 };
 
