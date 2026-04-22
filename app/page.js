@@ -1,4 +1,5 @@
 import Category from "@/components/layout/Category";
+import Cta from "@/components/layout/Cta";
 import Hero from "@/components/layout/Hero";
 import Keychain from "@/components/layout/Keychains";
 import Trending from "@/components/layout/Trending";
@@ -12,6 +13,7 @@ export default function Home() {
       <Trending />
       <Zipchains />
       <Keychain />
+      <Cta/>
     </div>
   );
 }

@@ -5,9 +5,9 @@ import MainBtn from "../ui/MainBtn";
 
 const Keychain = () => {
   return (
-    <section>
+    <section className="bg-body">
       {/* wrap */}
-      <div className=" bg-body py-28 ">
+      <div className="  py-28 ">
         {/* ḥead */}
 
         <div className="px-6 lg:px-12 mb-12 flex justify-between items-end">
