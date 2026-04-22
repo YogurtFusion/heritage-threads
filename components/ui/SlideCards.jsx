@@ -4,8 +4,8 @@ import AddCartBtn from "./AddCartBtn";
 
 export default function SlideCard({ img, title, subhead, price }) {
   return (
-    <div className=" flex flex-col gap-6">
-      <div className=" relative  w-full h-full aspect-square  overflow-hidden bg-card">
+    <div className=" flex flex-col gap-6 max-w-200">
+      <div className=" relative  w-full aspect-square  overflow-hidden bg-card">
         <Image
           className=" object-center object-cover "
           src={img}

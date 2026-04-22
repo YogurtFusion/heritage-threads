@@ -90,7 +90,7 @@ const Trending = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className="min-w-[85vw] md:min-w-[40vw] lg:min-w-[25vw] snap-start  "
+              className="min-w-[80vw] md:min-w-[40vw] lg:min-w-[25vw]"
             >
               <SlideCard {...item} />
             </div>
