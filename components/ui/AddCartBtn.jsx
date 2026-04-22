@@ -1,0 +1,14 @@
+import React from "react";
+
+const AddCartBtn = () => {
+  return (
+    <button aria-label="add to cart button"
+      className={`group uppercase relative flex justify-center items-center  bg-transparent border border-border text-heading w-full max-w-xs tracking-wide text-sm px-6 py-2  cursor-pointer selection:bg-transparent overflow-hidden mx-auto`}
+    >
+      <span className="relative z-10 inset-0 mx-auto group-active:text-body group-hover:text-body duration-500 transition-all">Add to cart</span>
+      <div className="absolute bg-heading   inset-0 duration-500 transition-all -translate-x-full group-hover:translate-x-0 ease-in-out"></div>
+    </button>
+  );
+};
+
+export default AddCartBtn;
