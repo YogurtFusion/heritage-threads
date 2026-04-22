@@ -2,6 +2,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import AnnouncementBar from "@/components/shared/AnnouncementBar";
 import TopNav from "@/components/shared/Navbar/TopNav";
+import Footer from "@/components/shared/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <AnnouncementBar />
         <TopNav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
