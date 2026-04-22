@@ -23,7 +23,7 @@ const Hero = () => {
             in your pocket.
           </h1>
 
-          <MainBtn MainClass={" text-white bg-primary "} hoverClass={"bg-primary-hover"} />
+          <MainBtn MainClass={" text-white bg-primary "} HoverClass={"bg-primary-hover"} />
         </div>
       </div>
     </section>

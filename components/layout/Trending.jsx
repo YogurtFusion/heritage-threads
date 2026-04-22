@@ -3,26 +3,30 @@ import SlideCard from "../ui/SlideCards";
 import { Trendingdata } from "@/app/data/product";
 import MainBtn from "../ui/MainBtn";
 
-
 const Trending = () => {
   return (
     <section>
       {/* wrap */}
       <div className=" bg-body py-28 ">
-
         {/* ḥead */}
-        
+
         <div className="px-6 lg:px-12 mb-12 flex justify-between items-end">
-        <div>
-         <span className="uppercase text-primary text-xs font-bold leading-4 tracking-[2.4px] block mb-2">
-            CURATED SELECTION
-          </span>
-          <h2 className="text-heading text-4xl leading-[110%] ">
-            Trending Now
-          </h2>
+          <div>
+            <span className="uppercase text-primary text-xs font-bold leading-4 tracking-[2.4px] block mb-2">
+              CURATED SELECTION
+            </span>
+            <h2 className="text-heading text-4xl leading-[110%] ">
+              Trending Now
+            </h2>
           </div>
           <div className="">
-          <MainBtn/> 
+            <MainBtn
+              MainClass={
+                "border border-primary text-primary group-hover:text-card"
+              }
+              HoverClass={"bg-primary"}
+              TextHover={"group-hover:text-card"}
+            />
           </div>
         </div>
 
@@ -37,7 +41,7 @@ const Trending = () => {
             </div>
           ))}
 
-        <div className="min-w-[1px] h-1" aria-hidden="true"></div>
+          <div className="min-w-[1px] h-1" aria-hidden="true"></div>
         </div>
       </div>
     </section>
