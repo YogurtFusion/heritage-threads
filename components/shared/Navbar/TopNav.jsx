@@ -5,9 +5,10 @@ import { SearchIcon } from "@/components/ui/Search";
 import { CartIcon } from "@/components/ui/Cart";
 import CloseIcons from "@/components/ui/Close";
 import { usePathname } from "next/navigation";
+import MenuIcon from "@/components/ui/MenuIcon";
 
 const TopNav = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
   const nav = [
     {
       id: "id1",
@@ -17,20 +18,20 @@ const TopNav = () => {
     {
       id: "id2",
       title: "Products",
-      href: "/",
+      href: "/collection",
     },
     {
       id: "id3",
       title: "Contact US",
-      href: "/",
+      href: "/contact",
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const inputRef = useRef(null);
 
-useEffect(()=>{
-  if (isOpen) inputRef.current?.focus()
-},[isOpen])
+  useEffect(() => {
+    if (isOpen) inputRef.current?.focus();
+  }, [isOpen]);
 
   useEffect(() => {
     const handleEscape = (e) => {
@@ -46,22 +47,28 @@ useEffect(()=>{
     <header className="sticky top-0 w-full bg-white/5  backdrop-blur-md shadow-md  z-50 ">
       {/* wrap */}
       <div className=" flex  justify-between items-center px-6 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
-        <nav className="flex justify-between items-center gap-6 font-playfair">
+        <nav className=" hidden md:flex justify-between items-center gap-6 font-playfair">
           {nav.map((item) => (
             <Link
               key={item.id}
               href={item.href}
-              className={`hover:text-secondary active:text-secondary duration-300 transition-colors text-sm ${pathname ===item.href ?"text-primary font-semibold":"text-body-text hover:text-primary"}`}
+              className={`hover:text-secondary active:text-secondary duration-300 transition-colors text-sm ${pathname === item.href ? "text-primary font-semibold" : "text-body-text hover:text-primary"}`}
             >
               {item.title}
             </Link>
           ))}
         </nav>
+        <nav className="md:hidden text-heading ">
+    <MenuIcon/>
+        </nav>
         {/* logo */}
 
-          <Link className="absolute left-1/2 -translate-x-1/2 font-playfair font-semibold text-xl  tracking-tight hover:text-primary transition-colors " href={"/"}>
-            Heritage Threads
-          </Link>
+        <Link
+          className="absolute left-1/2 -translate-x-1/2 font-playfair font-semibold text-xl  tracking-tight hover:text-primary transition-colors "
+          href={"/"}
+        >
+          Heritage Threads
+        </Link>
 
         {/* Right Icons */}
         <div className=" flex justify-end items-center gap-1 ">
