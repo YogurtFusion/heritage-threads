@@ -24,7 +24,7 @@ const Footer = () => {
             <h3 className='text-heading text-xl font-medium tracking-tight'>
               Heritage Threads
             </h3>
-            <p className='text-heading/50 text-[10px] md:text-xs leading-relaxed tracking-[0.15em] uppercase max-w-xs'>
+            <p className='text-heading/50 text-xs md:text-xs leading-relaxed tracking-[0.15em] uppercase max-w-xs'>
               © 2024 THE CURATED CANVAS. <br className="hidden md:block" />
               PRESERVING THE MADHUBANI LEGACY.
             </p>
