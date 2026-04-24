@@ -13,7 +13,7 @@ export default function Home() {
       <Trending />
       <Zipchains />
       <Keychain />
-      <Cta/>
+      <Cta />
     </div>
   );
 }

@@ -15,9 +15,7 @@ const Zipchains = () => {
             <span className="uppercase text-primary text-xs font-bold leading-4 tracking-[2.4px] block mb-2">
               CURATED SELECTION
             </span>
-            <h2 className="text-heading text-4xl leading-[110%] ">
-              Zipchains
-            </h2>
+            <h2 className="text-heading text-4xl leading-[110%] ">Zipchains</h2>
           </div>
           <div className="">
             <MainBtn
