@@ -6,18 +6,19 @@ import TreeIcon from "@/components/ui/TreeIcon";
 
 export default function AboutPage() {
   return (
-    <main className="bg-body  py-12 px-6 md:px-12 lg:px-24">
+    <main className="bg-body  py-12 px-6 md:px-12 lg:px-24 ">
       {/* Hero Section */}
-      <section className=" relative max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-24 mb-24 pt-8">
+
+      <section className=" relative  max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-end lg:justify-between gap-12 min-h-[85vh] lg:min-h-0 lg:gap-24 mb-16 lg:mb-24  pt-8 overflow-hidden lg:overflow-visible">
         {/* Left: Text Content */}
-        <div className="relative z-10 flex flex-col justify-center items-center mx-auto md:block w-full lg:w-1/2">
-          <h1 className=" text-heading text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        <div className="relative z-10 flex flex-col justify-center items-center lg:items-start  w-full lg:w-1/2 px-6 lg:px-0">
+          <h1 className=" text-heading text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-center lg:text-left">
             Artisanal <br />
             Integrity.
           </h1>
-          <div className="relative z-10 max-w-xs mx-auto md:max-w-md text-center ">
-            <div className="absolute inset-0 z-0 bg-white/40 backdrop-blur-md p-6 rounded-lg "></div>
-            <p className="relative text-body-text text-base md:text-lg leading-relaxed ">
+          <div className="relative z-10 max-w-xs mx-auto lg:mx-0 md:max-w-md text-center md:text-left ">
+            <div className=" lg:hidden absolute inset-0 z-0 bg-white/50 backdrop-blur-md p-6 md:p-8 rounded-lg "></div>
+            <p className="relative text-body-text text-base md:text-lg leading-relaxed md:px-4 md:py-2 ">
               Weaving a 3,000-year legacy of Madhubani art into modern,
               structured utility. Every thread tells a story of heritage and
               precision.
@@ -26,20 +27,20 @@ export default function AboutPage() {
         </div>
 
         {/* Right: Featured Image */}
-        <div className=" absolute inset-0 md:block w-full lg:w-1/2 ">
-          <div className=" md:relative aspect-4/5 bg-card absolute overflow-hidden">
-            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,var(--color-heading)_1px,transparent_1px)] bg-size-[20px_20px] pointer-events-none z-10 mix-blend-overlay"></div>
+        <div className=" absolute inset-0 lg:relative w-full lg:w-1/2 lg:flex lg:justify-end  ">
+          <div className=" relative w-full h-full lg:max-w-md lg:aspect-4/5 bg-card  overflow-hidden">
+            <div className="absolute z-10 inset-0 opacity-10 pointer-events-none mix-blend-overlay "></div>
             <Image
               src={HeroImg}
               alt="Artisan working on Madhubani art"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
             />
           </div>
         </div>
       </section>
 
       {/* The Legacy Section */}
-      <section className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-16  md:mb-24  md:py-24 ">
+      <section className="  max-w-6xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-16  md:mb-24  lg:py-24 px-6 lg:px-0 ">
         {/* Left: Title & Badge */}
         <div className="w-full md:w-5/12 shrink-0">
           <div className="inline-block border-b border-section/60 px-2 py-1 mb-6">
@@ -73,15 +74,15 @@ export default function AboutPage() {
       </section>
 
       {/* Decorative Separator Icon */}
-      <div className="flex justify-center my-20 md:mb-24 text-heading">
-       <SunIcon/>
+      <div className="flex justify-center  my-20 md:mb-32 text-heading">
+        <SunIcon />
       </div>
 
       {/* Mission Block Section */}
       <section className="max-w-6xl mx-auto bg-section-2 px-8 py-20 md:py-24 flex flex-col items-center justify-center text-center">
         {/* Drafting/Compass Icon */}
         <div className="text-primary mb-8">
-       <TreeIcon/>
+          <TreeIcon />
         </div>
 
         {/* Mission Statement */}
