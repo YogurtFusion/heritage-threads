@@ -1,17 +1,20 @@
 import React from "react";
+import Link from "next/link";
 
-const MainBtn = ({ MainClass, TextHover, HoverClass, hidden }) => {
+const MainBtn = ({ mainClass, textHover, hoverClass, hidden, href }) => {
   return (
+<Link href={href}>
     <div
-      className={`group uppercase relative ${MainClass}   px-3 py-2 w-fit tracking-wide text-sm   cursor-pointer selection:bg-transparent ease-in-out  lg:duration-500 transition-all overflow-hidden `}
-    >
-      <p className={`relative z-10 ${TextHover}   lg:duration-300 flex gap-2`}>
+      className={`group/btn uppercase relative ${mainClass}    px-3 py-2 w-fit tracking-wide text-sm cursor-pointer selection:bg-transparent selection:text-primary ease-in-out  lg:duration-300 transition-all overflow-hidden `}
+      >
+      <p className={`relative z-10 ${textHover}   lg:duration-300 flex gap-2`}>
         EXPLORE <span className={`${hidden}`}> COLLECTION</span>
       </p>
       <div
-        className={`absolute ${HoverClass}  inset-0  lg:duration-500 transition-all -translate-x-full group-active:translate-x-0 group-hover:translate-x-0 ease-in-out`}
-      ></div>
+        className={`absolute ${hoverClass}  inset-0  lg:duration-300 transition-all -translate-x-full group-active/btn:translate-x-0 group-hover/btn:translate-x-0 ease-in-out`}
+        ></div>
     </div>
+        </Link>
   );
 };
 

@@ -7,7 +7,7 @@ const Trending = () => {
   return (
     <section>
       {/* wrap */}
-      <div className=" bg-body py-12 md:py-28 ">
+      <div className=" bg-body py-12 lg:py-28 ">
         {/* ḥead */}
 
         <div className="px-6 lg:px-12 mb-12 flex flex-row justify-between   items-end">
@@ -19,14 +19,15 @@ const Trending = () => {
               Trending
             </h2>
           </div>
-          <div className="">
+          <div className=" ">
             <MainBtn
-              MainClass={
-                "border border-primary text-primary group-hover:text-card"
+              mainClass={
+                "border border-primary text-primary group-hover/btn:text-card px-3 py-2"
               }
               hidden={"hidden  md:block"}
-              HoverClass={"bg-primary"}
-              TextHover={"group-hover:text-card group-active:text-card"}
+              hoverClass={"bg-primary"}
+              textHover={"group-hover/btn:text-card group-active/btn:text-card"}
+            href={"/"}
             />
           </div>
         </div>
@@ -42,7 +43,7 @@ const Trending = () => {
             </div>
           ))}
 
-          <div className="min-w-[1px] h-1" aria-hidden="true"></div>
+          <div className="min-w-px h-1" aria-hidden="true"></div>
         </div>
       </div>
     </section>

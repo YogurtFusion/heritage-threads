@@ -65,9 +65,10 @@ const Cta = () => {
         </p>
 
         <MainBtn
-          MainClass="bg-primary text-card border-none px-10 py-4"
-          HoverClass="bg-primary-hover"
-          TextHover="group-hover:text-card"
+          mainClass="bg-primary text-card border-none px-10 py-4"
+          hoverClass="bg-primary-hover"
+          textHover="group-hover:text-card"
+        href={"/"}
         />
 
         {/* Decorative bottom line — traditional touch */}
