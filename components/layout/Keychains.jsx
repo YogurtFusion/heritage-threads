@@ -7,7 +7,7 @@ const Keychain = () => {
   return (
     <section className="bg-body">
       {/* wrap */}
-      <div className="  py-28 ">
+      <div className="  py-12 md:py-28 ">
         {/* ḥead */}
 
         <div className="px-6 lg:px-12 mb-12 flex justify-between items-end">
@@ -22,6 +22,7 @@ const Keychain = () => {
               MainClass={
                 "border border-primary text-primary group-hover:text-card"
               }
+              hidden={"hidden  md:block"}
               HoverClass={"bg-primary"}
               TextHover={"group-hover:text-card"}
             />
