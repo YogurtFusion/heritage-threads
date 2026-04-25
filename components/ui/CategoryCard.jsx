@@ -5,7 +5,7 @@ import MainBtn from "./MainBtn";
 
 const CategoryCard = ({ img, title }) => {
   return (
-    <div     className="group relative w-full h-full aspect-[4/5] overflow-hidden cursor-pointer "
+    <div     className="group relative w-full h-full aspect-4/5 overflow-hidden cursor-pointer "
     >
       <Image
         src={img}
