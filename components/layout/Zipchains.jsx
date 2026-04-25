@@ -7,7 +7,7 @@ const Zipchains = () => {
   return (
     <section>
       {/* wrap */}
-      <div className=" bg-body py-12 lg:py-28 ">        {/* ḥead */}
+      <div className=" bg-body mb-12 lg:mb-28 ">        {/* ḥead */}
 
         <div className="px-6 lg:px-12 mb-12 flex justify-between items-end">
           <div>

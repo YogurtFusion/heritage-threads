@@ -5,9 +5,9 @@ import MainBtn from "../ui/MainBtn";
 
 const Trending = () => {
   return (
-    <section>
+    <section className="bg-body">
       {/* wrap */}
-      <div className=" bg-body py-12 lg:py-28 ">
+      <div className="  my-12 lg:my-28 ">
         {/* ḥead */}
 
         <div className="px-6 lg:px-12 mb-12 flex flex-row justify-between   items-end">

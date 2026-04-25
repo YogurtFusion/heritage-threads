@@ -7,7 +7,7 @@ const Keychain = () => {
   return (
     <section className="bg-body">
       {/* wrap */}
-      <div className="  py-12 lg:py-28 ">
+      <div className="  mb-12 lg:mb-28 ">
         {/* ḥead */}
 
         <div className="px-6 lg:px-12 mb-12 flex justify-between items-end">
