@@ -21,6 +21,11 @@ const TopNav = () => {
       href: "/collection",
     },
     {
+      id: "id4",
+      title: "About US",
+      href: "/about",
+    },
+    {
       id: "id3",
       title: "Contact US",
       href: "/contact",

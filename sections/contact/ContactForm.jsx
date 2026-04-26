@@ -74,7 +74,7 @@ const ContactForm = () => {
       {/* Primary Button */}
       <PrimaryBtn
         title={"Send Message"}
-        mainClass={" text-white bg-primary px-3 py-2"}
+        mainClass={" text-white bg-primary px-6 py-3"}
         hoverClass={"bg-primary-hover"}
         href={"/"}
       />
