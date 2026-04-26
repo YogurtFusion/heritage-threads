@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { SearchIcon } from "@/components/Icons/SearchIcon";
-import { CartIcon } from "@/components/ui/Cart";
+import { CartIcon } from "@/components/Icons/CartIcon";
 import CloseIcons from "@/components/ui/Close";
 import { usePathname } from "next/navigation";
 import MenuIcon from "@/components/Icons/MenuIcon";
