@@ -1,7 +1,7 @@
 import React from "react";
-import SlideCard from "../ui/SlideCards";
+import SlideCard from "../../components/ui/SlideCards";
 import { Keychaindata, Trendingdata } from "@/app/data/product";
-import MainBtn from "../ui/MainBtn";
+import MainBtn from "../../components/ui/MainBtn";
 
 const Keychain = () => {
   return (

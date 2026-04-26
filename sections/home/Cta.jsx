@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import CtaBg from "@/assets/cta/cta-bg.png";
-import MainBtn from "../ui/MainBtn";
+import MainBtn from "../../components/ui/MainBtn";
 
 const Cta = () => {
   return (

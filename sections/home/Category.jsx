@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryCard from "../ui/CategoryCard";
+import CategoryCard from "../../components/ui/CategoryCard";
 import ZipChains from "@/assets/category/key-chains.png";
 import KeyChains from "@/assets/category/zip-chains.png";
 

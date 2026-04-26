@@ -1,9 +1,9 @@
-import Category from "@/components/layout/Category";
-import Cta from "@/components/layout/Cta";
-import Hero from "@/components/layout/Hero";
-import Keychain from "@/components/layout/Keychains";
-import Trending from "@/components/layout/Trending";
-import Zipchains from "@/components/layout/Zipchains";
+import Category from "@/sections/home/Category";
+import Cta from "@/sections/home/Cta";
+import Hero from "@/sections/home/Hero";
+import Keychain from "@/sections/home/Keychains";
+import Trending from "@/sections/home/Trending";
+import Zipchains from "@/sections/home/Zipchains";
 
 export default function Home() {
   return (
