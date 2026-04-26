@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import MainBtn from "./MainBtn";
+import MainBtn from "./HomeBtn";
 
 const CategoryCard = ({ img, title }) => {
   return (

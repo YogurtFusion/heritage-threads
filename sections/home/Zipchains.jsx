@@ -1,7 +1,7 @@
 import React from "react";
 import SlideCard from "../../components/ui/SlideCards";
 import { Trendingdata, Zipchaindata } from "@/app/data/product";
-import MainBtn from "../../components/ui/MainBtn";
+import MainBtn from "../../components/ui/HomeBtn";
 
 const Zipchains = () => {
   return (

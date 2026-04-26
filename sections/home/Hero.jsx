@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import HeroImg from "@/assets/hero/hero.png";
 import MobileImg from "@/assets/hero/mobile.png";
-import MainBtn from "../../components/ui/MainBtn";
+import MainBtn from "../../components/ui/HomeBtn";
 
 const Hero = () => {
   return (
