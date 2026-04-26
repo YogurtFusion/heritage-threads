@@ -3,7 +3,7 @@
 export default function AccountProfile() {
   return (
     <main className="min-h-screen bg-body text-body-text font-inter py-12 px-6 md:px-12 lg:px-24">
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-12 lg:gap-24">
+      <div className="max-w-300 mx-auto flex flex-col md:flex-row gap-12 lg:gap-24">
         
         {/* Sidebar Navigation */}
         <aside className="w-full md:w-48 lg:w-56 shrink-0">

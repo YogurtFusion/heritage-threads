@@ -1,8 +1,8 @@
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import AnnouncementBar from "@/components/shared/AnnouncementBar";
-import TopNav from "@/components/shared/Navbar/TopNav";
-import Footer from "@/components/shared/Footer";
+import AnnouncementBar from "@/components/layout/AnnouncementBar";
+import TopNav from "@/components/layout/Navbar/TopNav";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   variable: "--font-inter",

@@ -1,8 +1,8 @@
 import React from "react";
 import HeroImg from "@/assets/about/hero.png";
 import Image from "next/image";
-import SunIcon from "@/components/ui/SunIcon";
-import TreeIcon from "@/components/ui/TreeIcon";
+import SunIcon from "@/components/Icons/SunIcon";
+import TreeIcon from "@/components/Icons/TreeIcon";
 
 export default function AboutPage() {
   return (

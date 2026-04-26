@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { SearchIcon } from "@/components/ui/Search";
+import { SearchIcon } from "@/components/Icons/SearchIcon";
 import { CartIcon } from "@/components/ui/Cart";
 import CloseIcons from "@/components/ui/Close";
 import { usePathname } from "next/navigation";
-import MenuIcon from "@/components/ui/MenuIcon";
+import MenuIcon from "@/components/Icons/MenuIcon";
 
 const TopNav = () => {
   const pathname = usePathname();

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import InstaIcon from '../ui/InstagramIcon';
-import RedditIcon from '../ui/RedditIcon';
+import InstaIcon from '../Icons/InstagramIcon';
+import RedditIcon from '../Icons/RedditIcon';
 
 const Footer = () => {
   // Array for links makes the code cleaner and easier to update
