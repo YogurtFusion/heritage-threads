@@ -45,7 +45,9 @@ const CheckoutForm = () => {
                     </option>
                   ))}
                 </select>
-                <DropDownArrow />
+                <DropDownArrow
+                mainClass={"absolute right-4 top-1/2 -translate-y-1/2"}
+                />
               </div>
               <input
                 type="text"
