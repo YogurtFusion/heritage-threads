@@ -1,6 +1,9 @@
 import React from "react";
 import CheckoutSummary from "./CheckoutSummary";
 import { indianStates } from "@/app/data/Checkout";
+import DropDownArrow from "@/components/Icons/DropDownArrow";
+import PrimaryBtn from "@/components/ui/PrimaryBtn";
+import LockIcon from "@/components/Icons/LockIcon";
 
 const CheckoutForm = () => {
   return (
@@ -36,23 +39,13 @@ const CheckoutForm = () => {
               <div className="col-span-4 relative">
                 <select className="w-full border border-border bg-transparent p-3.5 text-sm focus:outline-none text-body-text appearance-none cursor-pointer">
                   <option value="state"></option>
-                  {indianStates.map((item)=>(
-                    <option value="text-body-text text-sm" key={item}>{item} </option>
+                  {indianStates.map((item) => (
+                    <option value="text-body-text text-sm" key={item}>
+                      {item}{" "}
+                    </option>
                   ))}
                 </select>
-                <svg
-                  className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 text-muted-text pointer-events-none"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                <DropDownArrow />
               </div>
               <input
                 type="text"
@@ -119,20 +112,16 @@ const CheckoutForm = () => {
             </div>
           </div>
 
+
           {/* Submit Button */}
-          <button
-            type="button"
-            className="w-full bg-primary hover:bg-primary-hover text-white py-4 text-xs font-bold tracking-widest uppercase transition-colors flex items-center justify-center gap-2"
-          >
-            Place Order
-            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                fillRule="evenodd"
-                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+          <PrimaryBtn
+            href={"/"}
+            title={"Place Order"}
+            mainClass={" text-white bg-primary  w-full flex items-center py-4 justify-center gap-2"}
+            textHover={"text-xs tracking-widest uppercase font-bold "}
+            hoverClass={"bg-primary-hover"}
+            svg={<LockIcon/>}
+          />
         </form>
       </div>
 

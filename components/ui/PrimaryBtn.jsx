@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-const PrimaryBtn = ({title ,  mainClass, textHover, hoverClass, hidden, href }) => {
+const PrimaryBtn = ({title ,  mainClass, textHover, hoverClass, hidden, href,svg }) => {
   return (
 <Link href={href}>
     <div
-      className={`group/btn uppercase relative ${mainClass}    px-3 py-2 w-fit tracking-wide text-sm cursor-pointer selection:bg-transparent selection:text-primary ease-in-out  lg:duration-300 transition-all overflow-hidden `}
-      >
+      className={`group/btn uppercase relative ${mainClass} px-3 py-2 w-fit tracking-wide text-sm cursor-pointer selection:bg-transparent selection:text-primary ease-in-out  lg:duration-300 transition-all overflow-hidden `}
+      > <div className="relative z-10">
+        {svg}
+        </div>
       <p className={`relative z-10 ${textHover}   lg:duration-300 flex gap-2`}>{title}
       </p>
       {/* <p className={`relative z-10 ${textHover}   lg:duration-300 flex gap-2`}>
