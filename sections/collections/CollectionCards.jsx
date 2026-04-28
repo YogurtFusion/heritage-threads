@@ -1,22 +1,22 @@
+import AddCartBtn from "@/components/ui/AddCartBtn";
+import Image from "next/image";
 import React from "react";
 
-export const CollectionCards = ({}) => {
+export const CollectionCards = ({img, title, price}) => {
   return (
     <article className="group flex flex-col">
       <div className="relative aspect-4/5 bg-[#1C2628] mb-5 overflow-hidden">
-        <img
-          src="/placeholder-zipchain.jpg"
-          alt="Brass Zipchain"
+        <Image
+          src={img}
+          alt={title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90"
         />
       </div>
       <h3 className="font-playfair text-xl text-heading mb-1">
-        Brass Zipchain
+{title}
       </h3>
-      <p className="text-sm text-muted-text mb-4">$65.00</p>
-      <button className="mt-auto w-full bg-primary hover:bg-primary-hover text-white text-sm font-semibold tracking-wide py-3 px-4 transition-colors">
-        ADD TO CART
-      </button>
+      <p className="text-sm text-muted-text mb-4">₹{price} </p>
+    <AddCartBtn/>
     </article>
   );
 };

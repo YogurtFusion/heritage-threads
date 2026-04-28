@@ -2,6 +2,7 @@ import React from "react";
 import { SidebarFilters } from "./SidebarFilters";
 import { CollectionCards } from "./CollectionCards";
 import DropDownArrow from "@/components/Icons/DropDownArrow";
+import { CollectionData } from "@/app/data/collection";
 
 const CollectionSection = () => {
   return (
@@ -31,7 +32,11 @@ const CollectionSection = () => {
 
             {/* Product Grid */}
             <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
-              <CollectionCards />
+
+                {/* cards */}
+                {CollectionData.map((item)=>(
+                    <CollectionCards key={item.id} img={item.img} title={item.title} price={item.price} />
+                ))}
             </section>
 
             {/* Pagination */}
