@@ -49,10 +49,10 @@ const TopNav = () => {
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 w-full bg-white/5  backdrop-blur-md shadow-md  z-50 ">
+    <header className=" bg-white/5  backdrop-blur-md shadow-md">
       {/* wrap */}
       <div className=" flex  justify-between items-center px-6 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
-        <nav className=" hidden md:flex justify-between items-center gap-6 font-playfair">
+        <nav className="  md:flex justify-between items-center gap-6 font-playfair">
           {nav.map((item) => (
             <Link
               key={item.id}
@@ -63,9 +63,7 @@ const TopNav = () => {
             </Link>
           ))}
         </nav>
-        <nav className="md:hidden text-heading ">
-    <MenuIcon/>
-        </nav>
+
         {/* logo */}
 
         <Link
@@ -89,7 +87,6 @@ const TopNav = () => {
               aria-label="Open search"
               onClick={() => setIsOpen(true)}
             >
-              {/* <div className={`cursor-pointer ${!isOpen?"px-6":"px-0"}`} onClick={() => setIsOpen(true)}> */}
               <SearchIcon />
             </button>
 
@@ -121,7 +118,9 @@ const TopNav = () => {
             aria-label="cart"
             className="p-2 hover:opacity-70 rounded-full text-secondary hover:bg-border/30 transition-opacity "
           >
-            <CartIcon />
+            <Link href={"/cart"}>
+              <CartIcon />
+            </Link>
           </button>
         </div>
       </div>

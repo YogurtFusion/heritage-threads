@@ -3,6 +3,7 @@ import "./globals.css";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import TopNav from "@/components/layout/Navbar/TopNav";
 import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar/Navbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <AnnouncementBar />
-        <TopNav/>
+        <Navbar/>
         {children}
         <Footer/>
       </body>

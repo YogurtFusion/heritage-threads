@@ -6,8 +6,8 @@ import CategoryBtn from "./CategoryBtn";
 
 const CategoryCard = ({ img, title }) => {
   return (
-    <div className="group relative w-full h-full aspect-4/5 overflow-hidden cursor-pointer ">
-      <Link href={"/collection"}>
+    
+      <Link href={"/collection"} className=" block group relative w-full h-full aspect-4/5 overflow-hidden cursor-pointer  ">
         <Image
           src={img}
           className="object-cover object-center transition-transform duration-300 lg:duration-700 group-active:scale-105 group-hover:scale-105"
@@ -33,7 +33,7 @@ const CategoryCard = ({ img, title }) => {
           </div>
         </div>
       </Link>
-    </div>
+    
   );
 };
 

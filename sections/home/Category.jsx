@@ -19,7 +19,7 @@ const Category = () => {
           </p>
         </div>
         {/* cards */}
-        <div className="  grid grid-cols-1 lg:grid-cols-2   gap-6 w-full h-auto md:h-[80vh] ">
+        <div className="  grid grid-cols-1 lg:grid-cols-2   gap-6 w-full h-auto  ">
           <CategoryCard img={ZipChains} title={"Zipchains"} />
           <CategoryCard img={KeyChains} title={"KeyChains"} />
         </div>
