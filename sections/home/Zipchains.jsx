@@ -7,7 +7,8 @@ const Zipchains = () => {
   return (
     <section>
       {/* wrap */}
-      <div className=" bg-body mb-12 lg:mb-28 ">        {/* ḥead */}
+      <div className=" bg-body mb-12 lg:mb-28 ">
+                {/* ḥead */}
 
         <div className="px-6 lg:px-12 mb-12 flex justify-between items-end">
           <div>
@@ -24,7 +25,7 @@ const Zipchains = () => {
               hidden={"hidden  md:block"}
               hoverClass={"bg-primary"}
               textHover={"group-hover/btn:text-card group-active/btn:text-card"}
-            href={"/"}
+          href={"/collection"}
             />
           </div>
         </div>

@@ -25,7 +25,7 @@ const Keychain = () => {
             hidden={"hidden  md:block"}
               hoverClass={"bg-primary"}
               textHover={"group-hover/btn:text-card group-active/btn:text-card"}
-            href={"/"}
+            href={"/collection"}
             />
           </div>
         </div>

@@ -27,7 +27,7 @@ const CategoryCard = ({ img, title }) => {
           <MainBtn
             mainClass={" text-white bg-primary px-3 py-2"}
             hoverClass={"bg-primary-hover"}
-            href={"/"}
+              href={"/collection"}
           />
         </div>
       </div>
