@@ -7,13 +7,14 @@ const CategoryCard = ({ img, title }) => {
   return (
     <div     className="group relative w-full h-full aspect-4/5 overflow-hidden cursor-pointer "
     >
+      <Link href={"/collection"}>
       <Image
         src={img}
         className="object-cover object-center transition-transform duration-300 lg:duration-700 group-active:scale-105 group-hover:scale-105"
         fill
         alt="category image"
         sizes="(max-width: 768px) 100vw, 50vw"
-      />
+        />
 
       {/* Text */}
       <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent opacity-80 " />
@@ -27,11 +28,12 @@ const CategoryCard = ({ img, title }) => {
           <MainBtn
             mainClass={" text-white bg-primary px-3 py-2"}
             hoverClass={"bg-primary-hover"}
-              href={"/collection"}
-          />
+            href={"/collection"}
+            />
         </div>
       </div>
       
+            </Link>
     </div>
   );
 };

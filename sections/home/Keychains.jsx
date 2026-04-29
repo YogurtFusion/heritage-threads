@@ -41,7 +41,7 @@ const Keychain = () => {
             </div>
           ))}
 
-          <div className="min-w-[1px] h-1" aria-hidden="true"></div>
+          <div className="min-w-px h-1" aria-hidden="true"></div>
         </div>
       </div>
     </section>
