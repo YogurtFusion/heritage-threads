@@ -7,7 +7,7 @@ const Category = () => {
   return (
     <section className="bg-section/10 w-full  ">
       {/* wrap */}
-      <div className="max-w-screen-2xl min-h-[90vh] md:min-h-screen mx-auto py-10 md:py-0 px-4 md:px-12 flex flex-col justify-center">
+      <div className="max-w-screen-2xl min-h-[80vh] md:min-h-[80vh] mx-auto py-10 md:py-0 px-4 md:px-12 flex flex-col justify-center">
         
         {/* Added heading section with an optional descriptive subtext */}
         <div className="my-8 md:my-24 w-full">

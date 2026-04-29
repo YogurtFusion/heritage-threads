@@ -57,7 +57,7 @@ const TopNav = () => {
             <Link
               key={item.id}
               href={item.href}
-              className={`hover:text-secondary active:text-secondary duration-300 transition-colors text-sm ${pathname === item.href ? "text-primary font-semibold" : "text-body-text hover:text-primary"}`}
+              className={` duration-300 transition-colors text-sm ${pathname === item.href ? "text-primary font-semibold hover:text-primary-hover" : "text-secondary active:text-primary hover:text-primary"}`}
             >
               {item.title}
             </Link>
@@ -85,7 +85,7 @@ const TopNav = () => {
             } `}
           >
             <button
-              className={`p-2 hover:opacity-70 transition-opacity rounded-full hover:bg-border/30`}
+              className={`p-2 hover:opacity-70 transition-opacity rounded-full text-secondary  hover:bg-border/30`}
               aria-label="Open search"
               onClick={() => setIsOpen(true)}
             >
@@ -105,11 +105,12 @@ const TopNav = () => {
                 name="search"
                 type="text"
                 placeholder="Search"
+                autoComplete="off"
                 className="outline-none text-sm bg-transparent w-32 placeholder:text-muted-text focus:text-heading"
               />
               <button
                 aria-label="close search"
-                className="text-muted-text hover:text-heading p-1 transition-colors  cursor-pointer hover:bg-border/30 rounded-full  "
+                className="text-secondary hover:text-heading p-1 transition-colors  cursor-pointer hover:bg-border/30 rounded-full  "
                 onClick={() => setIsOpen(false)}
               >
                 <CloseIcons />
@@ -118,7 +119,7 @@ const TopNav = () => {
           </div>
           <button
             aria-label="cart"
-            className="p-2 hover:opacity-70 rounded-full hover:bg-border/30 transition-opacity "
+            className="p-2 hover:opacity-70 rounded-full text-secondary hover:bg-border/30 transition-opacity "
           >
             <CartIcon />
           </button>
