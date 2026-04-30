@@ -37,15 +37,21 @@ const CheckoutForm = () => {
             <div className="grid grid-cols-4 gap-4">
               <div className="col-span-4 relative">
                 <select className="w-full border border-border bg-transparent p-3.5 text-sm focus:outline-none text-body-text appearance-none cursor-pointer">
-                  <option value="state"></option>
-                  {indianStates.map((item) => (
-                    <option value="text-body-text text-sm" key={item}>
-                      {item}{" "}
-                    </option>
-                  ))}
+                  <option value="select state" disabled>
+                    Select State
+                  </option>
+                  <option value="bihar" className="text-body-text text-sm">
+                    Bihar
+                  </option>
+                  <option
+                    value="maharashtra"
+                    className="text-body-text text-sm"
+                  >
+                    Maharashtra
+                  </option>
                 </select>
                 <DropDownArrow
-                mainClass={"absolute right-4 top-1/2 -translate-y-1/2"}
+                  mainClass={"absolute right-4 top-1/2 -translate-y-1/2"}
                 />
               </div>
               <input
@@ -113,15 +119,16 @@ const CheckoutForm = () => {
             </div>
           </div>
 
-
           {/* Submit Button */}
           <PrimaryBtn
             href={"/"}
             title={"Place Order"}
-            mainClass={" text-white bg-primary  w-full flex items-center py-4 justify-center gap-2"}
+            mainClass={
+              " text-white bg-primary  w-full flex items-center py-4 justify-center gap-2"
+            }
             textHover={"text-xs tracking-widest uppercase font-bold "}
             hoverClass={"bg-primary-hover"}
-            svg={<LockIcon/>}
+            svg={<LockIcon />}
           />
         </form>
       </div>
