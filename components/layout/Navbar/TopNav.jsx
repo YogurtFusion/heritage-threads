@@ -114,14 +114,12 @@ const TopNav = () => {
               </button>
             </div>
           </div>
-          <button
-            aria-label="cart"
-            className="p-2 hover:opacity-70 rounded-full text-secondary hover:bg-border/30 transition-opacity "
-          >
-            <Link href={"/cart"}>
+          
+            <Link href={"/cart"}  aria-label="cart"
+            className="block p-2 hover:opacity-70 rounded-full text-secondary hover:bg-border/30 transition-opacity "
+        >
               <CartIcon />
             </Link>
-          </button>
         </div>
       </div>
     </header>

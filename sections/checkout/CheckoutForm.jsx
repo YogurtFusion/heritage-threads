@@ -121,7 +121,7 @@ const CheckoutForm = () => {
 
           {/* Submit Button */}
           <PrimaryBtn
-            href={"/"}
+            href={"/order-confirmation"}
             title={"Place Order"}
             mainClass={
               " text-white bg-primary  w-full flex items-center py-4 justify-center gap-2"
