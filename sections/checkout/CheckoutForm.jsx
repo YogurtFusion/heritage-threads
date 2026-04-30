@@ -128,7 +128,7 @@ const CheckoutForm = () => {
             }
             textHover={"text-xs tracking-widest uppercase font-bold "}
             hoverClass={"bg-primary-hover"}
-            svg={<LockIcon />}
+            // svg={<LockIcon />}
           />
         </form>
       </div>

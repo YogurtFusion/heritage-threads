@@ -1,3 +1,4 @@
+import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import React from "react";
 
 const CartSummary = ({ cartItems }) => {
@@ -39,9 +40,15 @@ const CartSummary = ({ cartItems }) => {
             </span>
           </div>
 
-          <button className="w-full bg-primary hover:bg-primary-hover text-white text-sm font-bold tracking-widest uppercase py-4 transition-colors mb-6">
-            CHECKOUT
-          </button>
+          <PrimaryBtn
+            title={"CHECKOUT"}
+            mainClass={
+              " text-white bg-primary flex justify-center  py-4 w-full mb-6 "
+            }
+            hoverClass={"bg-primary-hover"}
+            textHover={"text-white text-sm font-bold tracking-widest uppercase"}
+            href={"/checkout"}
+          />
 
           <div className="flex items-center justify-center gap-2 text-xs text-muted-text">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">

@@ -17,7 +17,7 @@ const PrimaryBtn = ({
     <Link href={href}>
         <div className="relative z-10">{svg}</div>
         <p
-          className={`relative z-10 ${textHover}   lg:duration-300 flex gap-2`}
+          className={`relative z-10 ${textHover}  transition-all lg:duration-300 flex gap-2`}
         >
           {title}
         </p>
