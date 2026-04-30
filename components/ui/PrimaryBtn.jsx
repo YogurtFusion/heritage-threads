@@ -11,10 +11,10 @@ const PrimaryBtn = ({
   svg,
 }) => {
   return (
-    <div
-        className={`group/btn uppercase relative ${mainClass} px-3 py-2 w-fit tracking-wide text-sm cursor-pointer selection:bg-transparent selection:text-primary ease-in-out  lg:duration-300 transition-all overflow-hidden `}
+    <Link href={href}
+        className={`group/btn block uppercase relative ${mainClass} px-3 py-2 w-fit tracking-wide text-sm cursor-pointer selection:bg-transparent selection:text-primary ease-in-out  lg:duration-300 transition-all overflow-hidden `}
       >
-    <Link href={href}>
+    
         <div className="relative z-10">{svg}</div>
         <p
           className={`relative z-10 ${textHover}  transition-all lg:duration-300 flex gap-2`}
@@ -28,7 +28,7 @@ const PrimaryBtn = ({
           className={`absolute ${hoverClass}  inset-0  lg:duration-300 transition-all -translate-x-full group-active/btn:translate-x-0 group-hover/btn:translate-x-0 ease-in-out`}
         ></div>
     </Link>
-      </div>
+     
   );
 };
 

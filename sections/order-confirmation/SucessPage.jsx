@@ -3,7 +3,7 @@ import SucessBtn from "./SucessBtn";
 
 const OrderPage = () => {
   return (
-    <main className="max-w-150 mx-auto text-center py-12 max-h-screen h-full">
+    <main className="max-w-150 mx-auto text-center py-12 min-h-screen ">
       <div className="w-14 h-14 bg-green-400 mx-auto flex items-center justify-center mb-8">
         <svg
           className="w-6 h-6 text-white"
