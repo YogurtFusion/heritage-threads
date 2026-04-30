@@ -53,31 +53,48 @@ const SideNav = () => {
     <>
       <header className="sticky top-0 w-full bg-white/5  backdrop-blur-md shadow-md  z-50 ">
         {/* wrap */}
-        <div className=" flex  justify-between items-center px-6 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
-          <button onClick={() => setIsSidebarOpen(true)} aria-label="open true" className="text-secondary">
-            <MenuIcon />
-          </button>
+        <div className=" flex  justify-between items-center px-3 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
+          <div className="w-10 shrink-0">
+            <button
+              onClick={() => setIsSidebarOpen(true)}
+              aria-label="open true"
+              className="text-secondary"
+            >
+              <MenuIcon />
+            </button>
+          </div>
 
           {/* logo */}
 
           <Link
-            className="absolute left-1/2 -translate-x-1/2 font-playfair font-semibold text-xl  tracking-tight hover:text-primary transition-colors "
+            className={` flex-1 text-center font-playfair font-semibold tracking-tight hover:text-primary transition-all duration-500 ease-in-out `}
             href={"/"}
           >
-            Heritage Threads
+            <div className="relative h-7 flex items-center justify-center">
+              <span
+                className={` absolute transition-all duration-500 whitespace-nowrap text-xl ${isOpen ? "opacity-0 scale-90 -translate-x-4 pointer-events-none" : "opacity-100 scale-100 translate-x-0"}  `}
+              >
+                Heritage Threads
+              </span>
+              <span
+                className={` transition-all duration-500 text-lg ${isOpen ? "opacity-100 scale-100 translate-x-0" : " opacity-0 scale-75 pointer-events-none  "} `}
+              >
+                HT
+              </span>
+            </div>
           </Link>
 
           {/* Right Icons */}
-          <div className=" flex justify-end items-center gap-1 ">
+          <div className=" flex justify-end items-center gap-1 min-w-10 ">
             <div
-              className={`flex justify-start items-center transition-all duration-500 ease-in-out h-9  ${
+              className={`flex  items-center transition-all duration-500 ease-in-out h-9  bg-body z-10 ${
                 isOpen
                   ? " border border-border  rounded-full px-2  "
                   : "border-transparent px-0"
               } `}
             >
               <button
-                className={`p-2 active:opacity-70 hover:opacity-70 transition-opacity rounded-full text-secondary  hover:bg-border/30`}
+                className={`p-2 active:bg-border/30 hover:bg-border/30 transition-opacity rounded-full text-secondary `}
                 aria-label="Open search"
                 onClick={() => setIsOpen(true)}
               >
@@ -85,9 +102,9 @@ const SideNav = () => {
               </button>
 
               <div
-                className={` flex items-center overflow-hidden transition-all duration-500 ease-in-out ${
+                className={` flex items-center overflow-hidden transition-all duration-500 ease-in-out  ${
                   isOpen
-                    ? "max-w-xs opacity-100 ml-1"
+                    ? "max-w-3xs opacity-100 ml-1  "
                     : "max-w-0 opacity-0 ml-0 pointer-events-none"
                 }`}
               >
@@ -132,18 +149,17 @@ const SideNav = () => {
             <CloseIcons />
           </button>
         </div>
-<nav className="flex flex-col gap-6 p-6  font-playfair mt-4">
-
-        {nav.map((item) => (
-          <Link
-          onClick={()=>setIsSidebarOpen(false)}
-          key={item.id}
-          href={item.href}
-          className={` duration-300 transition-colors text-sm ${pathname === item.href ? "text-primary font-semibold hover:text-primary-hover" : "text-secondary active:text-primary hover:text-primary"}`}
-          >
-            {item.title}
-          </Link>
-        ))}
+        <nav className="flex flex-col gap-6 p-6  font-playfair mt-4">
+          {nav.map((item) => (
+            <Link
+              onClick={() => setIsSidebarOpen(false)}
+              key={item.id}
+              href={item.href}
+              className={` duration-300 transition-colors text-sm ${pathname === item.href ? "text-primary font-semibold hover:text-primary-hover" : "text-secondary active:text-primary hover:text-primary"}`}
+            >
+              {item.title}
+            </Link>
+          ))}
         </nav>
       </aside>
     </>
