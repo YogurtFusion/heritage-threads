@@ -11,11 +11,8 @@ const CheckoutSection = () => {
         {/* Checkout Section */}
         <CheckoutForm/>
 
-        {/* Visual Divider (Simulation of scrolling to next view) */}
-        <hr className="border-border w-full max-w-150 mx-auto my-24" />
-
-        {/* Success / Thank You Section */}
-      <CheckoutSucess/>
+    
+     
 
       </div>
     </main>
