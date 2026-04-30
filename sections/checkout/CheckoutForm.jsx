@@ -1,6 +1,5 @@
 import React from "react";
 import CheckoutSummary from "./CheckoutSummary";
-import { indianStates } from "@/app/data/checkout";
 import DropDownArrow from "@/components/Icons/DropDownArrow";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import LockIcon from "@/components/Icons/LockIcon";
