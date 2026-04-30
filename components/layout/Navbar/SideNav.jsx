@@ -54,7 +54,7 @@ const SideNav = () => {
       <header className="sticky top-0 w-full bg-white/5  backdrop-blur-md shadow-md  z-50 ">
         {/* wrap */}
         <div className=" flex  justify-between items-center px-6 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
-          <button onClick={() => setIsSidebarOpen(true)} aria-label="open true">
+          <button onClick={() => setIsSidebarOpen(true)} aria-label="open true" className="text-secondary">
             <MenuIcon />
           </button>
 
@@ -126,7 +126,7 @@ const SideNav = () => {
           <span className="font-playfair font-semibold text-lg"> Menu</span>
           <button
             aria-label="close search"
-            className="text-secondary hover:text-heading p-2 transition-colors  cursor-pointer hover:bg-border/30 rounded-full  "
+            className="text-secondary hover:text-heading p-2 transition-colors  cursor-pointer active:bg-border/30 hover:bg-border/30 rounded-full  "
             onClick={() => setIsSidebarOpen(false)}
           >
             <CloseIcons />
