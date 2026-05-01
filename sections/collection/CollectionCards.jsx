@@ -4,7 +4,7 @@ import AddCartBtn from "@/components/ui/AddCartBtn";
 import Image from "next/image";
 import Link from "next/link";
 
-export const CollectionCards = ({ img, title, price }) => {
+export const CollectionCards = ({ img, title, price ,index}) => {
   return (
     <article className="group flex flex-col">
       <Link href={"/product-details"}>
@@ -13,6 +13,8 @@ export const CollectionCards = ({ img, title, price }) => {
             src={img}
             alt={title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90"
+            priority={index<3}
+            loading={"eager"}
           />
         </div>
       </Link>

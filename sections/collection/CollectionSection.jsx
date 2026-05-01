@@ -32,11 +32,16 @@ const CollectionSection = () => {
 
             {/* Product Grid */}
             <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
-
-                {/* cards */}
-                {CollectionData.map((item)=>(
-                    <CollectionCards key={item.id} img={item.img} title={item.title} price={item.price} />
-                ))}
+              {/* cards */}
+              {CollectionData.map((item, index) => (
+                <CollectionCards
+                  key={item.id}
+                  img={item.img}
+                  title={item.title}
+                  price={item.price}
+                  index={index}
+                />
+              ))}
             </section>
 
             {/* Pagination */}

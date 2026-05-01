@@ -12,6 +12,7 @@ const CategoryCard = ({ img, title }) => {
           src={img}
           className="object-cover object-center transition-transform duration-300 lg:duration-700 group-active:scale-105 group-hover:scale-105"
           fill
+          
           alt="category image"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
