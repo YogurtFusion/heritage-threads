@@ -13,7 +13,8 @@ export const CollectionCards = ({ img, title, price ,index}) => {
             src={img}
             alt={title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90"
-            priority={index<3}
+            priority={index < 3}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             loading={"eager"}
           />
         </div>

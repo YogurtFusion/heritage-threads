@@ -4,6 +4,8 @@ import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import TopNav from "@/components/layout/Navbar/TopNav";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar/Navbar";
+import { CartProvider } from "@/context/cartContext";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,10 +31,13 @@ export default function RootLayout({ children }) {
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <AnnouncementBar />
-        <Navbar/>
-        {children}
-        <Footer/>
+        <CartProvider>
+          <Toaster position="bottom-center" />
+          <AnnouncementBar />
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );
