@@ -87,7 +87,7 @@ const SideNav = () => {
           {/* Right Icons */}
           <div className=" flex justify-end items-center gap-1 min-w-10 ">
             <div
-              className={`flex  items-center transition-all duration-500 ease-in-out h-9  bg-body z-10 ${
+              className={`flex  items-center transition-all duration-500 ease-in-out h-9   z-10 ${
                 isOpen
                   ? " border border-border  rounded-full px-2  "
                   : "border-transparent px-0"
