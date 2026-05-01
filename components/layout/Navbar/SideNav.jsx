@@ -6,9 +6,11 @@ import { CartIcon } from "@/components/Icons/CartIcon";
 import CloseIcons from "@/components/ui/Close";
 import { usePathname } from "next/navigation";
 import MenuIcon from "@/components/Icons/MenuIcon";
+import { useCart } from "@/context/cartContext";
 
 const SideNav = () => {
   const pathname = usePathname();
+    const { cartCount } = useCart();
   const nav = [
     {
       id: "id1",
@@ -128,9 +130,12 @@ const SideNav = () => {
             <Link
               href={"/cart"}
               aria-label="cart"
-              className="p-2 active:opacity-70 hover:opacity-70 rounded-full text-secondary hover:bg-border/30 transition-opacity "
+              className=" relative p-2 active:opacity-70 hover:opacity-70 rounded-full text-secondary hover:bg-border/30 transition-opacity "
             >
-              <CartIcon />
+                <CartIcon />
+            {cartCount>0&&(
+              <span className="absolute top-1 right-1 bg-primary text-body text-xs w-4 h-4 rounded-full flex items-center justify-center" >{cartCount} </span>
+            )}
             </Link>
           </div>
         </div>
