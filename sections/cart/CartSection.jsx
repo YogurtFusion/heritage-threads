@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import CartProductCard from "./CartProductCard";
+import CartProductCard from "./CartCards";
 import CartSummary from "./CartSummary";
 import { initialCardData } from "@/app/data/cart";
 

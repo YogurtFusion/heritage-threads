@@ -1,4 +1,4 @@
-import { ProductDetailsSection } from "@/sections/productDetails/ProductDetailsSection";
+import { ProductDetailsSection } from "@/sections/productPreview/PreviewPage";
 
 export default function ProductDetailsPage() {
   return (

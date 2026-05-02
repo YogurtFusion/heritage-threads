@@ -17,7 +17,7 @@ const CartProductCard = ({item}) => {
                     {/* <p className="text-sm text-body-text mb-3">
                       Indigo / M
                     </p> */}
-                    <button className="text-[10px] font-semibold uppercase tracking-widest text-heading border-b border-heading pb-0.5 hover:text-primary hover:border-primary transition-colors">
+                    <button className="text-xs font-semibold uppercase tracking-widest text-heading border-b border-heading pb-0.5 hover:text-primary hover:border-primary transition-colors">
                       Remove
                     </button>
                   </div>

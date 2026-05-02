@@ -1,5 +1,5 @@
 import React from "react";
-import ProductDetailsPage from "@/app/product-details/page";
+import ProductDetailsPage from "@/app/productPreview/page";
 import AddCartBtn from "@/components/ui/AddCartBtn";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import Link from "next/link";
 export const CollectionCards = ({ img, title, price ,index}) => {
   return (
     <article className="group flex flex-col">
-      <Link href={"/product-details"}>
+      <Link href={"/productPreview"}>
         <div className="relative aspect-4/5 bg-[#1C2628] mb-5 overflow-hidden">
           <Image
             src={img}
