@@ -1,4 +1,4 @@
-import CartSection from "@/sections/cart/CartSection";
+import CartSection from "@/sections/cart/Cart";
 
 // CartPage.jsx
 export default function CartPage() {

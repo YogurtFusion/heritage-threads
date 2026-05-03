@@ -1,4 +1,4 @@
-import CollectionSection from "@/sections/collection/CollectionSection";
+import CollectionSection from "@/sections/collection/Collection";
 
 // CollectionPage.jsx
 export default function CollectionPage() {
