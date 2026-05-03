@@ -53,7 +53,7 @@ const SideNav = () => {
 
   return (
     <>
-      <header className="sticky top-0 w-full bg-white/5  backdrop-blur-md shadow-md  z-50 ">
+      <header className=" w-full bg-white/5  backdrop-blur-md shadow-md ">
         {/* wrap */}
         <div className=" flex  justify-between items-center px-3 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
           <div className="w-10 shrink-0">

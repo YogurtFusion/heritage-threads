@@ -50,7 +50,7 @@ const TopNav = () => {
   }, [isOpen]);
 
   return (
-    <header className=" bg-white/5  backdrop-blur-md shadow-md">
+    <header className="w-full bg-white/5  backdrop-blur-md shadow-md">
       {/* wrap */}
       <div className=" flex  justify-between items-center px-6 md:px-12 py-3  max-w-screen-2xl mx-auto min-h-14 ">
         <nav className="  md:flex justify-between items-center gap-6 font-playfair">
@@ -71,8 +71,8 @@ const TopNav = () => {
           className="absolute left-1/2 -translate-x-1/2 font-playfair font-semibold text-xl  tracking-tight hover:text-primary transition-colors "
           href={"/"}
         >
-          Heritage Threads
-        </Link>
+     <span className="lg:hidden" >HT</span> <span className="hidden lg:block"> Heritage Threads</span>    
+        </Link>       
 
         {/* Right Icons */}
         <div className=" flex justify-end items-center gap-1 ">
