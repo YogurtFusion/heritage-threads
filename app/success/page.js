@@ -1,4 +1,4 @@
-import OrderPage from '@/sections/order-confirmation/Sucess'
+import OrderPage from '@/sections/success/Success'
 import React from 'react'
 
 const page = () => {

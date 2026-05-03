@@ -1,23 +1,18 @@
-import React from 'react'
-import CheckoutForm from './CheckoutForm'
-import CheckoutSucess from './CheckoutSucess'
+import React from "react";
+import CheckoutForm from "./CheckoutForm";
+import CheckoutSucess from "./CheckoutSucess";
 
 const CheckoutSection = () => {
   return (
     <div>
       <main className="min-h-screen bg-body py-12 px-4 sm:px-6 lg:px-12 ">
-      <div className="max-w-6xl mx-auto">
-        
-        {/* Checkout Section */}
-        <CheckoutForm/>
-
-    
-     
-
-      </div>
-    </main>
+        <div className="max-w-6xl mx-auto">
+          {/* Checkout Section */}
+          <CheckoutForm />
+        </div>
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default CheckoutSection
+export default CheckoutSection;

@@ -1,5 +1,5 @@
 import React from "react";
-import SucessBtn from "./SucessBtn";
+import SucessBtn from "./SuccessBtn";
 
 const OrderPage = () => {
   return (
