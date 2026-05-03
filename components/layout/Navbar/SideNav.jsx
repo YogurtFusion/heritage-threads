@@ -91,7 +91,7 @@ const SideNav = () => {
             <div
               className={`flex  items-center transition-all duration-500 ease-in-out h-9   z-10 ${
                 isOpen
-                  ? " border border-border  rounded-full px-2  "
+                  ? " border border-border bg-body  rounded-full px-2  "
                   : "border-transparent px-0"
               } `}
             >

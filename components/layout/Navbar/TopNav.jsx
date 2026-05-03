@@ -79,7 +79,7 @@ const TopNav = () => {
           <div
             className={`flex justify-start items-center transition-all duration-500 ease-in-out h-9  ${
               isOpen
-                ? " border border-border  rounded-full px-2  "
+                ? " border border-border  rounded-full px-2  bg-body"
                 : "border-transparent px-0"
             } `}
           >
@@ -92,9 +92,9 @@ const TopNav = () => {
             </button>
 
             <div
-              className={` flex items-center overflow-hidden transition-all duration-500 ease-in-out ${
+              className={` flex items-center overflow-hidden transition-all duration-500 ease-in-out  ${
                 isOpen
-                  ? "max-w-xs opacity-100 ml-1"
+                  ? "max-w-xs opacity-100 ml-1 "
                   : "max-w-0 opacity-0 ml-0 pointer-events-none"
               }`}
             >
@@ -104,7 +104,7 @@ const TopNav = () => {
                 type="text"
                 placeholder="Search"
                 autoComplete="off"
-                className="outline-none text-sm bg-transparent w-32 placeholder:text-muted-text focus:text-heading"
+                className="outline-none text-sm  w-32 placeholder:text-muted-text focus:text-heading"
               />
               <button
                 aria-label="close search"
