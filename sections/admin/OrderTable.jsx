@@ -10,7 +10,7 @@ const OrderTable = () => {
   return (
      <section className="bg-card border border-border rounded-sm">
           <div className="flex items-center justify-between p-6 border-b border-border">
-            <h2 className="font-playfair text-2xl text-heading">Recent Orders</h2>
+            <h2 className=" text-2xl text-heading">Recent Orders</h2>
             
             <Link href="#" className="text-sm font-semibold text-primary hover:text-primary-hover transition-colors">
               View All

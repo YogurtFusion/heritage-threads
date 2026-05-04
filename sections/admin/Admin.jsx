@@ -6,8 +6,6 @@ import OrderTable from "./OrderTable";
 const Admin = () => {
   return (
     <div className="flex min-h-screen w-full bg-body">
-      <AdminSidebar />
-
       <main className="flex-1 p-8 font-inter max-w-7xl mx-auto">
         <StatsGrid />
 
