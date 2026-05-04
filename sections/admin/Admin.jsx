@@ -1,7 +1,7 @@
 import React from "react";
 import AdminSidebar from "./AdminSidebar";
 import StatsGrid from "./StatsGrid";
-import OrderTable from "./OrderTable";
+import OrderTable from "./RecentOrders";
 
 const Admin = () => {
   return (
