@@ -2,7 +2,7 @@ import React from "react";
 import { SidebarFilters } from "./SidebarFilters";
 import { CollectionCards } from "./CollectionCards";
 import DropDownArrow from "@/components/Icons/DropDownArrow";
-import { CollectionData } from "@/app/data/collection";
+import { CollectionData } from "@/data/collection";
 
 const CollectionSection = () => {
   return (

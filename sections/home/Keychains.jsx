@@ -1,6 +1,6 @@
 import React from "react";
 import SlideCard from "../../components/ui/SlideCards";
-import { Keychaindata, Trendingdata } from "@/app/data/product";
+import { Keychaindata, Trendingdata } from "@/data/product";
 import MainBtn from "../../components/ui/HomeBtn";
 
 const Keychain = () => {

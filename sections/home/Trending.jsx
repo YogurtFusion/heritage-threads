@@ -1,6 +1,6 @@
 import React from "react";
 import SlideCard from "../../components/ui/SlideCards";
-import { Trendingdata } from "@/app/data/product";
+import { Trendingdata } from "@/data/product";
 import MainBtn from "../../components/ui/HomeBtn";
 
 const Trending = () => {

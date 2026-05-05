@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import CartProductCard from "./CartCards";
 import CartSummary from "./CartSummary";
-import { initialCardData } from "@/app/data/cart";
+import { initialCardData } from "@/data/cart";
 
 const CartSection = () => {
 const [cartItems, setCartItems]=useState(initialCardData)

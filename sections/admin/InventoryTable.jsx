@@ -1,4 +1,4 @@
-import { mockInventory } from "@/app/data/admin";
+import { mockInventory } from "@/data/admin";
 import React from "react";
 
 const getStatusStyles = (status) => {
