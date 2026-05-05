@@ -1,7 +1,7 @@
-import { ProductDetailsSection } from "@/sections/productPreview/Preview";
+import { Preview} from "@/sections/Preview/Preview";
 
 export default function ProductDetailsPage() {
   return (
-   <ProductDetailsSection/>
+<Preview/>
   );
 }

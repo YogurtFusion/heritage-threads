@@ -14,7 +14,7 @@ const Inventory = () => {
         </div>
         <PrimaryBtn
           title={"Add Product"}
-          href={"/admin/inventory"}
+          href={"/admin/inventory/add"}
           mainClass={" text-white bg-primary px-3 py-2"}
           hoverClass={"bg-primary-hover"}
         />

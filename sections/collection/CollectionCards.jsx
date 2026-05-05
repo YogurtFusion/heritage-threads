@@ -1,5 +1,4 @@
 import React from "react";
-import ProductDetailsPage from "@/app/preview/page";
 import AddCartBtn from "@/components/ui/AddCartBtn";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +21,7 @@ export const CollectionCards = ({ img, title, price ,index}) => {
       <h3 className="font-playfair text-xl text-heading mb-1">{title}</h3>
       <p className="text-sm text-muted-text mb-4">₹{price} </p>
 
-      <AddCartBtn />
+      <AddCartBtn  />
     </article>
   );
 };

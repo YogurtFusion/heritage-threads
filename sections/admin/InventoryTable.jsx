@@ -30,7 +30,7 @@ const InventoryTable = () => {
         <tbody>
           {mockInventory.map((item) => {
             return (
-              <tr className="border-b border-border hover:bg-card" >
+              <tr className="border-b border-border hover:bg-card" key={item.id}>
                 <td className="py-4 px-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-border rounded-md overflow-hidden shrink-0 ">

@@ -7,7 +7,7 @@ import SunFlowerIcon from "@/components/Icons/SunFlowerIcon";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import PreviewBtn from "./PreviewBtn";
 
-export const ProductDetailsSection = () => {
+export const Preview = () => {
   return (
 
     <main className="bg-body min-h-screen py-12">
