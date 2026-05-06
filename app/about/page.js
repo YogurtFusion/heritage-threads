@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "@/assets/about/hero.png";
+import HeroImg from "@/public/assets/about/hero.png";
 import Image from "next/image";
 import SunIcon from "@/components/Icons/SunIcon";
 import TreeIcon from "@/components/Icons/TreeIcon";
