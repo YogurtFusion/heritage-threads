@@ -1,4 +1,4 @@
-import AdminOrder from '@/sections/admin/Order'
+import AdminOrder from '@/sections/admin/order/Order'
 import OrderPage from '@/sections/success/Success'
 import React from 'react'
 

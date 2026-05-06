@@ -1,4 +1,4 @@
-import Inventory from '@/sections/admin/Inventory';
+import Inventory from '@/sections/admin/Inventory/Inventory';
 import Link from 'next/link';
 import React from 'react'
 

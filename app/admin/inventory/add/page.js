@@ -1,4 +1,4 @@
-import AddProductPage, { AddItems } from '@/sections/admin/AddItems'
+import AddProductPage, { AddItems } from '@/sections/admin/Inventory/AddItems'
 import React from 'react'
 
 const page = () => {

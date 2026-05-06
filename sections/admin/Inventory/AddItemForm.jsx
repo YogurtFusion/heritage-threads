@@ -1,32 +1,7 @@
-"use client"; // Required because forms eventually handle user input/state
-import Link from "next/link";
-import React from "react";
+import React from 'react'
 
-export default function AddProductPage() {
+const AddItemForm = () => {
   return (
-    <div className="max-w-4xl mx-auto py-8">
-      
-      {/* 1. HEADER SECTION */}
-      <div className="mb-8">
-        <Link 
-          href="/admin/inventory" 
-          className="inline-flex items-center text-sm text-muted-text hover:text-primary transition-colors mb-4"
-        >
-          {/* Back Arrow SVG */}
-          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back to Inventory
-        </Link>
-        <h1 className="text-3xl font-semibold text-heading mb-2">
-          Add New Product
-        </h1>
-        <p className="text-body-text">
-          Enter the details for the new artisanal piece to add to the Heritage Threads collection.
-        </p>
-      </div>
-
-      {/* 2. FORM CONTAINER */}
       <div className="bg-white border border-border rounded-xl p-8 shadow-sm">
         <form className="space-y-6">
           
@@ -123,10 +98,10 @@ export default function AddProductPage() {
             <label className="block text-sm font-medium text-heading mb-2">
               Product Images
             </label>
-            <div className="mt-1 flex justify-center px-6 pt-10 pb-12 border-2 border-dashed border-[#dfbfba] rounded-lg hover:bg-[#fcf2eb] transition-colors cursor-pointer group">
+            <div className="mt-1 flex justify-center px-6 pt-10 pb-12 border-2 border-dashed border-section rounded-lg hover:bg-section-2 transition-colors cursor-pointer group">
               <div className="space-y-2 text-center">
                 {/* Upload Icon */}
-                <div className="mx-auto h-12 w-12 bg-[#fcf2eb] text-primary rounded-md flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+                <div className="mx-auto h-12 w-12 bg-section-2 text-primary rounded-md flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                   </svg>
@@ -159,6 +134,7 @@ export default function AddProductPage() {
 
         </form>
       </div>
-    </div>
-  );
+  )
 }
+
+export default AddItemForm
