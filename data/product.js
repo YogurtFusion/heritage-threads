@@ -1,18 +1,18 @@
-import Img1 from "@/assets/Trending/img1.png";
-import Img2 from "@/assets/Trending/img2.png";
-import Img3 from "@/assets/Trending/img3.png";
-import ZipImg1 from "@/assets/zipchains/zipchain1.png"
-import ZipImg2 from "@/assets/zipchains/zipchain2.png"
-import ZipImg3 from "@/assets/zipchains/zipchain3.png"
-import ZipImg4 from "@/assets/zipchains/zipchain4.png"
-import ZipImg5 from "@/assets/zipchains/zipchain5.png"
-import ZipImg6 from "@/assets/zipchains/zipchain6.png"
-import KeychainImg1 from '@/assets/keychains/keychain1.png'
-import KeychainImg2 from '@/assets/keychains/keychain2.png'
-import KeychainImg3 from '@/assets/keychains/keychain3.png'
-import KeychainImg4 from '@/assets/keychains/keychain4.png'
-import KeychainImg5 from '@/assets/keychains/keychain5.png'
-import KeychainImg6 from '@/assets/keychains/keychain6.png'
+import Img1 from "@/public/assets/Trending/img1.png";
+import Img2 from "@/public/assets/Trending/img2.png";
+import Img3 from "@/public/assets/Trending/img3.png";
+import ZipImg1 from "@/public/assets/zipchains/zipchain1.png"
+import ZipImg2 from "@/public/assets/zipchains/zipchain2.png"
+import ZipImg3 from "@/public/assets/zipchains/zipchain3.png"
+import ZipImg4 from "@/public/assets/zipchains/zipchain4.png"
+import ZipImg5 from "@/public/assets/zipchains/zipchain5.png"
+import ZipImg6 from "@/public/assets/zipchains/zipchain6.png"
+import KeychainImg1 from '@/public/assets/keychains/keychain1.png'
+import KeychainImg2 from '@/public/assets/keychains/keychain2.png'
+import KeychainImg3 from '@/public/assets/keychains/keychain3.png'
+import KeychainImg4 from '@/public/assets/keychains/keychain4.png'
+import KeychainImg5 from '@/public/assets/keychains/keychain5.png'
+import KeychainImg6 from '@/public/assets/keychains/keychain6.png'
 
 export const Trendingdata = [
   {

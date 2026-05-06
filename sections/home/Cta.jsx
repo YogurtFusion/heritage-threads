@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import CtaBg from "@/assets/cta/cta-bg.png";
+import CtaBg from "@/public/assets/cta/cta-bg.png";
 import MainBtn from "../../components/ui/HomeBtn";
 
 const Cta = () => {

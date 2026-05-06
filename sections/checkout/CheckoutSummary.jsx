@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from "@/assets/cart/img1.png"
+import Img from "@/public/assets/cart/img1.png"
 import Image from 'next/image'
 
 const CheckoutSummary = () => {

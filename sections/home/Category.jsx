@@ -1,7 +1,7 @@
 import React from "react";
 import CategoryCard from "../../components/ui/CategoryCard";
-import ZipChains from "@/assets/category/key-chains.png";
-import KeyChains from "@/assets/category/zip-chains.png";
+import ZipChains from "@/public/assets/category/key-chains.png";
+import KeyChains from "@/public/assets/category/zip-chains.png";
 
 const Category = () => {
   return (
