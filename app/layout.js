@@ -1,9 +1,5 @@
 import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
-import AnnouncementBar from "@/components/layout/AnnouncementBar";
-import TopNav from "@/components/layout/Navbar/TopNav";
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar/Navbar";
+import "@/app/globals.css";
 import { CartProvider } from "@/context/cartContext";
 import { Toaster } from "react-hot-toast";
 
@@ -33,10 +29,8 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <CartProvider>
           <Toaster position="bottom-center" />
-          <AnnouncementBar />
-          <Navbar />
+         
           {children}
-          <Footer />
         </CartProvider>
       </body>
     </html>
