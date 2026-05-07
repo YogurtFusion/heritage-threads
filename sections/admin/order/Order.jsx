@@ -28,7 +28,7 @@ const AdminOrder = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <div className="max-w-7xl mx-auto space-y-8 bg-body">
+    <div className="max-w-7xl w-full mx-auto space-y-8 bg-body">
       
       {/* HEADER */}
       <div className="flex items-center justify-between">
@@ -42,7 +42,7 @@ const AdminOrder = () => {
       </div>
 
       {/* CONTROLS */}
-      <div className="flex items-center justify-between bg-white p-4 border border-border rounded-lg shadow-sm">
+      <div className="flex items-center justify-between gap-2 bg-white p-4 border border-border rounded-lg shadow-sm">
         <div className="relative w-72">
           {/* Search Icon */}
           <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ const AdminOrder = () => {
       </div>
 
       {/* TABLE */}
-      <div className="bg-white border border-border rounded-lg shadow-sm overflow-hidden">
+      <div className="bg-white border border-border rounded-lg shadow-sm overflow-hidden ">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="bg-card border-b border-border">

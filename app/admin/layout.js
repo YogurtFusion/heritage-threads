@@ -10,7 +10,7 @@ export default function AdminLayout({ children }) {
      <AdminNav/>
 
       {/* 2. The Main Content fills the remaining space */}
-      <main className="flex-1 p-8 overflow-y-auto">
+      <main className="flex-1 py-8 px-4 md:p-8 overflow-y-auto">
         {children}
       </main>
 
