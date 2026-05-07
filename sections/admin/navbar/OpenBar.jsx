@@ -18,7 +18,7 @@ const OpenSideBar = () => {
     { title: "Inventory", href: "/admin/inventory", icon: BoxIcon },
   ];
   return (
-    <aside className="w-64 h-full border-r border-border bg-card flex flex-col py-8 px-4 ">
+    <aside className="w-64 h-screen rounded-md border-r border-border bg-card flex flex-col py-8 px-4 ">
       <div className="px-4 py-3">
         <h2 className="text-2xl  font-semibold text-primary">
           Heritage Threads

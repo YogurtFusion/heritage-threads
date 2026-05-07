@@ -36,9 +36,9 @@ const AdminSidebar = () => {
     { title: "Inventory", href: "/admin/inventory", icon: BoxIcon },
   ];
   return (
-    <div>
+    <div className="">
       <div
-        className=" m-4 cursor-pointer text-secondary hover:text-primary active:text-primary"
+        className=" m-4  cursor-pointer text-secondary hover:text-primary active:text-primary"
         onClick={() => setIsOpen(true)}
       >
         <MenuIcon />
