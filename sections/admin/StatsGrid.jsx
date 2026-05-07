@@ -55,8 +55,8 @@ const STATS_DATA = [
 const StatsGrid = () => {
   return (
     <div>
-      <header className="flex items-center justify-between border-b border-border pb-6 mb-8">
-        <h1 className=" text-4xl text-heading font-semibold">
+      <header className="flex items-center justify-between border-b border-border pb-4 md:pb-6 mb-6 md:mb-8">
+        <h1 className=" text-2xl md:text-3xl lg:text-4xl text-heading font-semibold">
           Dashboard Overview
         </h1>
         <div className="flex items-center gap-6">
@@ -69,14 +69,13 @@ const StatsGrid = () => {
         
         </div>
       </header>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
 
         {STATS_DATA.map((stat) => (
           <article
             key={stat.title}
-            className="bg-card border border-border rounded-sm p-6"
-          >
-            <div className="flex items-center justify-between mb-4">
+            className="bg-card border border-border rounded-sm p-5 md:p-6 w-full mx-auto ">
+            <div className="flex items-center justify-between mb-4 ">
               <p className="text-xs font-semibold tracking-widest text-body-text uppercase">
                 {stat.title}
               </p>
@@ -91,7 +90,7 @@ const StatsGrid = () => {
                 {stat.icon}
               </svg>
             </div>
-            <p className=" text-4xl text-heading">{stat.value}</p>
+            <p className=" text-3xl md:text-4xl text-heading">{stat.value}</p>
           </article>
         ))}
       </section>
