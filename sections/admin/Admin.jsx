@@ -1,5 +1,5 @@
 import React from "react";
-import AdminSidebar from "./AdminSidebar";
+import AdminSidebar from "./navbar/AdminSidebar";
 import StatsGrid from "./StatsGrid";
 import OrderTable from "./RecentOrders";
 

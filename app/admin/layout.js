@@ -1,4 +1,5 @@
-import AdminSidebar from "@/sections/admin/AdminSidebar";
+import AdminNav from "@/sections/admin/navbar/AdminNav";
+import AdminSidebar from "@/sections/admin/navbar/AdminSidebar";
 
 
 export default function AdminLayout({ children }) {
@@ -6,7 +7,7 @@ export default function AdminLayout({ children }) {
     <div className="flex min-h-screen bg-background">
       
       {/* 1. The Sidebar stays fixed on the left */}
-      <AdminSidebar />
+     <AdminNav/>
 
       {/* 2. The Main Content fills the remaining space */}
       <main className="flex-1 p-8 overflow-y-auto">

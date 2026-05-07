@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const AddItemForm = () => {
@@ -118,12 +119,14 @@ const AddItemForm = () => {
 
           {/* 3. FORM ACTIONS */}
           <div className="pt-6 border-t border-border flex items-center justify-end gap-4 mt-8">
+            <Link href={"/admin/inventory"}>
             <button 
               type="button" // type="button" prevents it from submitting the form!
               className="px-6 py-2.5 border border-border rounded-md text-sm font-medium text-body-text hover:bg-body transition-colors"
-            >
+              > 
               Cancel
             </button>
+            </Link>
             <button 
               type="submit" // type="submit" triggers the actual form submission
               className="px-6 py-2.5 bg-primary text-white rounded-md text-sm font-medium hover:bg-primary-hover transition-colors shadow-sm"
