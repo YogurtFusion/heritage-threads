@@ -16,10 +16,10 @@ const InventoryTable = () => {
             <th className=" py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
               Product
             </th>
-            <th className=" py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
+            <th className=" hidden md:block py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
               Price
             </th>
-            <th className=" py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
+            <th className=" hidden md:block py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
               Status
             </th>
             <th className=" py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
@@ -40,14 +40,14 @@ const InventoryTable = () => {
                       <div className="text-sm font-medium text-heading">
                         {item.name}
                       </div>
-                      <div className="text-xs text-muted-text mt-0.5">
+                      <div className="text-xs text-muted-text mt-0.5 hidden md:block">
                         {item.category}
                       </div>
                     </div>
                   </div>
                 </td>
-                <td>{item.price}</td>
-                <td className="py-4 px-6">
+                <td className="hidden md:block">{item.price}</td>
+                <td className=" hidden md:block py-4 px-6">
                   <span
                     className={`inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold tracking-wider ${getStatusStyles(item.status)}`}
                   >
