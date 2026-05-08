@@ -3,7 +3,7 @@ import React from "react";
 
 const getStockStyle = (status) => {
   if (status === "LOW STOCK") return "bg-section-2 text-primary";
- if (status === "ACTIVE")return  "bg-border text-muted-text";
+ if (status === "ACTIVE")return  "bg-border text-success";
   return "bg-card text-body-text";
 }
 

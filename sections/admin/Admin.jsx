@@ -13,7 +13,7 @@ const Admin = () => {
           <OrderTable />
         </div>
         <div className="lg:hidden">
-<OrderCards/>
+          <OrderCards />
         </div>
       </main>
     </div>
