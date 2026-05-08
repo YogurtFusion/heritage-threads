@@ -1,6 +1,7 @@
 import React from "react";
 import InventoryTable from "./InventoryTable";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
+import InventoryCards from "./InventoryCards";
 
 const Inventory = () => {
   return (
@@ -30,8 +31,9 @@ const Inventory = () => {
           />
           </div>
       </div>
-
-      <InventoryTable />
+<div className="hidden lg:block"><InventoryTable /></div>
+<div className="lg:hidden"><InventoryCards/> </div>
+      
     </div>
   );
 };
