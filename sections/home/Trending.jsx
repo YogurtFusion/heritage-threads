@@ -2,6 +2,7 @@ import React from "react";
 import SlideCard from "../../components/ui/SlideCards";
 import { Trendingdata } from "@/data/product";
 import MainBtn from "../../components/ui/HomeBtn";
+import Link from "next/link";
 
 const Trending = () => {
   return (
@@ -39,7 +40,7 @@ const Trending = () => {
               key={item.id}
               className="min-w-[80vw] md:min-w-[40vw] lg:min-w-[25vw]"
             >
-              <SlideCard {...item} />
+              <SlideCard {...item} linkHref={"/preview"} />
             </div>
           ))}
 

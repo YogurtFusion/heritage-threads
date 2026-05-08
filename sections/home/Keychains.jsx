@@ -37,7 +37,7 @@ const Keychain = () => {
               key={item.id}
               className="min-w-[80vw] md:min-w-[40vw] lg:min-w-[25vw]"
             >
-              <SlideCard {...item} />
+              <SlideCard {...item} linkHref={"/preview"} />
             </div>
           ))}
 

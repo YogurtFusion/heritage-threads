@@ -1,18 +1,21 @@
 import Image from "next/image";
 import React from "react";
 import AddCartBtn from "./AddCartBtn";
+import Link from "next/link";
 
-export default function SlideCard({ img, title, subhead, price }) {
+export default function SlideCard({ img, title, subhead, price, linkHref }) {
   return (
     <div className=" flex flex-col gap-6 max-w-200">
       <div className=" relative  w-full aspect-square  overflow-hidden bg-card">
+      <Link href={linkHref}>
         <Image
           className=" object-center object-cover "
           src={img}
           alt="Sliding images"
           fill
           sizes="(max-width: 768px) 85vw, (max-width: 1200px) 40vw, 30vw "
-        />
+          />
+          </Link>
       </div>
       {/* card body */}
       <div className="flex flex-col gap-4">
