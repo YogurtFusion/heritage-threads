@@ -1,5 +1,6 @@
 import AdminNav from "@/sections/admin/navbar/AdminNav";
 import AdminSidebar from "@/sections/admin/navbar/AdminSidebar";
+import Link from "next/link";
 
 export default function AdminLayout({ children }) {
   return (
@@ -11,8 +12,8 @@ export default function AdminLayout({ children }) {
         <div className="flex items-center gap-3">
           {/* Your hamburger trigger goes HERE now! */}
           <AdminSidebar />
-          <span className="font-playfair font-semibold text-lg text-primary">
-            Heritage Threads
+          <span className="font-playfair font-semibold text-lg text-primary cursor-pointer">
+           <Link href={"/"} >Heritage Threads</Link> 
           </span>
         </div>
       </header>

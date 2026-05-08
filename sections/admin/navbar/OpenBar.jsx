@@ -20,8 +20,8 @@ const OpenSideBar = () => {
   return (
     <aside className="w-64 h-screen rounded-md border-r border-border bg-card flex flex-col py-8 px-4 ">
       <div className="px-4 py-3">
-        <h2 className="text-2xl  font-semibold text-primary">
-          Heritage Threads
+        <h2 className="text-2xl  font-semibold text-primary hover:text-secondary cursor-pointer ">
+        <Link href={"/"}>Heritage Threads</Link>  
         </h2>
         <p className="text-sm text-gray-500 mt-1">Artisanal Curator</p>
       </div>
