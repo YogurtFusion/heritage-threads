@@ -16,10 +16,10 @@ const InventoryTable = () => {
             <th className=" py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
               Product
             </th>
-            <th className=" hidden md:block py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
+            <th className=" -cell -4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
               Price
             </th>
-            <th className=" hidden md:block py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
+            <th className=" -cell -4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
               Status
             </th>
             <th className=" py-4 px-6 text-xs font-semibold text-muted-text uppercase tracking-wider">
@@ -30,7 +30,10 @@ const InventoryTable = () => {
         <tbody>
           {mockInventory.map((item) => {
             return (
-              <tr className="border-b border-border hover:bg-card" key={item.id}>
+              <tr
+                className="border-b border-border hover:bg-card"
+                key={item.id}
+              >
                 <td className="py-4 px-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-border rounded-md overflow-hidden shrink-0 ">
@@ -40,14 +43,12 @@ const InventoryTable = () => {
                       <div className="text-sm font-medium text-heading">
                         {item.name}
                       </div>
-                      <div className="text-xs text-muted-text mt-0.5 hidden md:block">
-                        {item.category}
-                      </div>
                     </div>
                   </div>
                 </td>
-                <td className="hidden md:block">{item.price}</td>
-                <td className=" hidden md:block py-4 px-6">
+                {/* hidden md:table-cell not working on  price and status */}
+                <td className=" ">{item.price}</td>
+                <td className=" py-4 px-6">
                   <span
                     className={`inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold tracking-wider ${getStatusStyles(item.status)}`}
                   >
